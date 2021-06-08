@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首頁 | 台灣觀光旅遊發展概況</title>
+  <meta name="description" content="此網站展示台灣近十年的觀光旅遊發展概況" />
+  <link rel="stylesheet" href="./twicon/twicon.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <!--This part is the head icons of the page-->
+  <link rel="shortcut icon" href="./taiwanIcon.png" />
+  <link rel="bookmark" href="./taiwanIcon.png" />
+  <!--google font setting-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Year", "觀光人次"],
+        ["2010", 3246005],
+        ["2011", 3633865],
+        ["2012", 4677330],
+        ["2013", 5479099],
+        ["2014", 7192095],
+        ["2015", 7505457],
+        ["2016", 7560753],
+        ["2017", 7648509],
+        ["2018", 7594251],
+        ["2019", 8444024],
+        ["2020", 694187],
+      ]);
+
+      var options = {
+        title: "近十年 ( 2010~2020 ) 來臺觀光旅客總人次變化",
+        curveType: "function",
+        legend: { position: "bottom" },
+      };
+
+      var chart = new google.visualization.LineChart(
+        document.getElementById("curve_chart")
+      );
+
+      chart.draw(data, options);
+    }
+  </script>
+
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9c667+0,eacaa6+51,ebb471+85;Orange+3D+%234 */
+      background: #f9c667;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #f9c667 0%, #eacaa6 51%, #ebb471 85%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #f9c667 0%, #eacaa6 51%, #ebb471 85%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #f9c667 0%, #eacaa6 51%, #ebb471 85%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9c667', endColorstr='#ebb471', GradientType=0);
+      /* IE6-9 */
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <!--標題-->
+  <header>
+    <h1 class="headerTitle">
+      <i class="twicon-main-island"></i>台灣觀光旅遊發展概況
+    </h1>
+    <h3 class="headerText">過去10年台灣觀光旅遊發展概況以及美食推薦</h3>
+  </header>
+
+  <!--導覽列-->
+  <nav>
+    <ul>
+      <li>
+        <a class="active" href="index.html"><i class="twicon-president-office"></i>
+          </i> 首頁</a>
+      </li>
+      <li>
+        <a href="./guide.html"><i class="twicon-lovers-brg"></i> 旅遊指南</a>
+      </li>
+      <li>
+        <a href="./landmark.html"><i class="twicon-nt-mus"></i> 著名地標</a>
+      </li>
+      <li>
+        <a href="./DomesticTravel.html"><i class="twicon-taipei101"></i> 國內觀光</a>
+      </li>
+      <li>
+        <a href="./food.html"><i class="twicon-tapioca"></i> 特色美食</a>
+      </li>
+      <li>
+        <a href="mailto:teavelurworld01@gmail.com?subject=我的意見"><i class="twicon-l-pixnet"></i>聯絡作者</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--主要內容-->
+  <main>
+    <section class="left">
+      <p>
+        台灣是太平洋中的一個島嶼。隨著全球化世界的來臨，交通工具的發達，各國的人們幾乎都能輕而易舉地到各地旅遊，台灣於1956年開始規劃觀光產業發展計畫，然而相較於歐美地區及其他鄰近的國家來說，雖然稍微緩慢，但憑藉著台灣地理位置身處亞太地區樞紐的利基，至今已能乘載著來自四面八方的旅客。自1979年開放人民出國觀光，2008年開放陸客來台，這些觀光開放政策，促進國際的交流，讓台灣的觀光產業慢慢站上世界的舞台，台灣首次統計來台旅客人次數是1956年，當年的旅客數量僅14,974人次，直至1981年，當年來台觀光旅客量首次突破百萬人次。
+      </p>
+      <br />
+      <p>
+        2012年開始，友善的觀光政策、自然環境與高質量的旅遊品質，讓每年來台觀光人次穩定上升，2019年甚至高達約844萬人次，而除了國外旅客，台灣國內旅遊風氣也隨之興起，2019年國人國內旅遊次數總計超過1億6,928萬旅次，產值更是高達上千億，可見國內旅遊能夠帶來的影響力亦是不容小覷。
+        雖然2019年末開始，國際疫情逐漸升溫，各國旅遊盛況不再，來台觀光人次甚至下降到僅69萬人次，觀光產業被迫走向轉型，調整產業結構，往品牌化、電商化及優化服務面向發展，經歷一系列的陣痛期。
+        這是最壞的時代，也是最好的時代，所做的準備絕對不會是浪費，可以預見的是，後疫情時代下的觀光產業，將會回彈復甦，蓬勃發展的情況絕對是精采可期。
+      </p>
+      <br />
+      <p>
+        雖然2019年末開始，國際疫情逐漸升溫，各國旅遊盛況不再，來台觀光人次甚至下降到僅69萬人次，觀光產業被迫走向轉型，調整產業結構，往品牌化、電商化及優化服務面向發展，經歷一系列的陣痛期。
+        這是最壞的時代，也是最好的時代，所做的準備絕對不會是浪費，可以預見的是，後疫情時代下的觀光產業，將會回彈復甦，蓬勃發展的情況絕對是精采可期。
+      </p>
+      <br />
+      <p>
+        這是最壞的時代，也是最好的時代，所做的準備絕對不會是浪費，可以預見的是，後疫情時代下的觀光產業，將會回彈復甦，蓬勃發展的情況絕對是精采可期。
+      </p>
+      <br />
+      <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    </section>
+    <section class="right">
+      <h4>
+        台灣旅遊小知識： <br />
+        台灣在哪裡?
+      </h4>
+      <p>
+        台灣是太平洋上的一個小島。
+        它毗鄰中國，在島上的原住民被認為是太平洋群島南島語族語系人民的起源。
+        台灣的陸地面積為13,972公里，島上約有2,380萬人居住，最主要通用語言為中文、閩南語、客家話。
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462782.16896244703!2d121.22618255468218!3d25.017586169488162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac72bce20a99%3A0x3f6a35cedd0ac2e0!2z5Y-w5YyX!5e0!3m2!1szh-TW!2stw!4v1605490427476!5m2!1szh-TW!2stw"
+        width="250" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+  </main>
+  <footer>歡迎光臨</footer>
+</body>
+
+</html>
